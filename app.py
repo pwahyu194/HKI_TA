@@ -194,7 +194,7 @@ def train_baseline():
 
         history = model.fit(
             X_train, y_train,
-            epochs=100,
+            epochs=50,
             batch_size=64,
             validation_split=0.2,
             verbose=0,
@@ -377,7 +377,7 @@ def train_ga():
         )
         history_ga = final_model_ga.fit(
             X_train, y_train,
-            epochs=100,
+            epochs=50,
             batch_size=best_batch_ga,
             validation_split=0.2,
             verbose=0,
@@ -540,7 +540,7 @@ def train_pso():
 
         history_final = model_final_pso.fit(
             X_train, y_train,
-            epochs=100,
+            epochs=50,
             batch_size=best_batch,
             validation_split=0.2,
             verbose=0,
@@ -932,3 +932,4 @@ st.sidebar.info(
     "✅ 3 Model Comparison\n\n"
     "Made with ❤️ Streamlit & TensorFlow"
 )
+
